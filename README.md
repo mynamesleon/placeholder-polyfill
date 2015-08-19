@@ -14,26 +14,26 @@ The script file adds a `placeholders` object to the global namespace with the fo
 ```js
 {
     /*
-    * control placeholder check type
-    * if true, placeholder text will disappear immediately on focus (IE behaviour)
-    * if false, placeholder will persist until a value is entered (Chrome behaviour)
-    */
+     * control placeholder check type
+     * if true, placeholder text will disappear immediately on focus (IE behaviour)
+     * if false, placeholder will persist until a value is entered (Chrome behaviour)
+     */
     hideOnFocus: false,
 
     /*
-    * wrap inputs and insert placeholder span
-    * @param $inputs {jQuery object} optional: inputs to apply to
-    *       will use all inputs if not passed in
-    */
+     * wrap inputs and insert placeholder span
+     * @param $inputs {jQuery object} optional: inputs to apply to
+     *       will use all inputs if not passed in
+     */
     apply: function ($inputs) {
         // plugin code
     },
 
     /*
-    * destroy polyfill spans and remove associated blur and focus events
-    * @param $inputs {jQuery object} optional: inputs to destroy polyfill from
-    *       will use all inputs if not passed in
-    */
+     * destroy polyfill spans and remove associated blur and focus events
+     * @param $inputs {jQuery object} optional: inputs to destroy polyfill from
+     *       will use all inputs if not passed in
+     */
     destroy: function ($inputs) {
         // plugin code
     }
