@@ -170,7 +170,7 @@ window.placeholders = window.placeholders || new function ($) {
 
     /*
      * create jQuery plugin variant
-     * @return {object}: placeholders namespace
+     * @return {object}: allows destroy method to be chained onto it
      */
     $.fn.placeholders = function () {
         var $elems = this;
