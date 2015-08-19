@@ -173,9 +173,15 @@ window.placeholders = window.placeholders || new function ($) {
      * @return {object}: placeholders namespace
      */
     $.fn.placeholders = function () {
-        _self.apply(this);
-        // return main object to allow destroy method to be chained
-        return _self;
+        var $elems = this;
+        _self.apply($elems);
+        // return destroy method with correct elements passed in
+        return {
+            destroy: function() {
+                _self.destroy($elems);
+                return $elems; // return original elements for more chaining
+            }
+        };
     };
 
 }(window.jQuery);

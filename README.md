@@ -48,7 +48,7 @@ It also includes a jQuery plugin variant:
 $('input[type="text"]').placeholders();
 ```
 
-The jQuery plugin variant returns the main placeholders object, so the destroy method can be chained onto it if necessary, e.g.
+The jQuery plugin variant can have the destroy method chained onto it if necessary, e.g.
 
 ```js
 $('input[type="text"]').placeholders().destroy();
