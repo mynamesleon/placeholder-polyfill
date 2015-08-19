@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Placeholder polyfill</title>
+    <link href="styles/style.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <input type="text" placeholder="Text in here" />
+    </div>
+    <div class="wrapper">
+        <input type="text" placeholder="Much much much much much much much much much longer text in here" />
+    </div>
+    <div class="wrapper">
+        <textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quia ea obcaecati reiciendis omnis aliquid quo optio eos ducimus blanditiis doloribus ratione dolor, quod. Consequuntur eos laborum reiciendis tempora ullam."></textarea>
+    </div>
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/placeholders.min.js"></script>
+    <script type="text/javascript">
+        placeholders.apply();
+    </script>
+</body>
+
+</html>
