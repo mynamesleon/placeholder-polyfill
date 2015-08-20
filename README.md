@@ -6,8 +6,6 @@ Unlike other placeholder polyfills, this one relies on inserting custom elements
 ## Installation
 Just grab the zip from the [releases](https://www.github.com/mynamesleon/placeholder-polyfill/releases) here on Git.
 
-Or install via bower `bower install wordify`
-
 ## Usage
 The script file adds a `placeholders` object to the global namespace with the following properties:
 
